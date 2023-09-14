@@ -37,3 +37,14 @@
     text-overflow: ellipsis;
     color:black;
 }
+
+.book-card-produto{
+    margin: 30px;
+    background-color: #868096;
+    border: 5px solid #868096;
+    display:inline-block;
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
