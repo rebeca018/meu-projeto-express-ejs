@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   res.render('index', { message: 'Olá, Mundo!' });
 });
 
-app.get('/produtos', (req, res) => {
+app.get('/produto', (req, res) => {
   res.render('produtos', { message: 'Deu certo' });
 });
 

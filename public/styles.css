@@ -17,7 +17,8 @@
     white-space: nowrap;
     overflow: hidden;    
     text-overflow: ellipsis;
-  }
+    color:black;
+}
   
 .book-card-img{
     height: 154px;
@@ -34,4 +35,5 @@
     white-space: nowrap;
     overflow: hidden;    
     text-overflow: ellipsis;
+    color:black;
 }
