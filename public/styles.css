@@ -1,8 +1,12 @@
+body, html{
+    background-color: #344960;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .book-card {
     margin: 30px;
-    background-color: #868096;
-    border: 5px solid #868096;
+    background-color: #C0A293;
+    border: 5px solid #C0A293;
     display:inline-block;
     overflow: hidden;
     height: 250px;
@@ -40,11 +44,41 @@
 
 .book-card-produto{
     margin: 30px;
-    background-color: #868096;
-    border: 5px solid #868096;
+    background-color: #C0A293;
+    border: 5px solid #C0A293;
     display:inline-block;
     overflow: hidden;
     height: 300px;
     width: 500px;
     border-radius: 10px;
+}
+
+.book{
+    display: flex;
+}
+
+.book-card-home{
+    text-align: left;
+    margin: 30px;
+    background-color: #C0A293;
+    border: 5px solid #C0A293;
+    display:inline-block;
+    overflow: hidden;
+    height: 340px;
+    width: 550px;
+    border-radius: 10px;
+    display: flex;
+  
+}
+.card-a{
+    margin-top: 90px;
+    height: 156px;
+    width: 150px;
+    
+}
+
+.card-b{
+    height: 340px;
+    width: 430px;
+    
 }
