@@ -19,8 +19,13 @@ const produtos = [
 
 ]
 
+function buscarProdutoPorID(id){
+  const produto = produtos.find(produto => produto.id == id);
+  return produto || null
+}
+
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Olá, Mundo!' });
+  res.render("index", { produtos });
 });
 
 app.get('/produto', (req, res) => {
