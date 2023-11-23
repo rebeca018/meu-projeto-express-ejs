@@ -14,8 +14,8 @@ const produtos = [
   {id: 6, imagem: "pc.jpg", titulo: "O Príncipe Cruel", preco: "32.99", decricao: "Da autora de best-sellers nº 1 do The New York Times, Holly Black, O prínicipe cruel é o primeiro livro da envolvente série O Povo do Ar sobre uma garota mortal que se vê presa em uma teia de intrigas de fadas reais." },
   {id: 7, imagem: "caraval.jpg", titulo: "Caraval", preco: "49.32", decricao: "Os anos de espera acabaram: a jovem Scarlett Dragna finalmente recebeu o tão esperado convite para participar do Caraval, um evento lendário que ocorre uma vez por ano e que conta com a participação do público." },
   {id: 8, imagem: "fw.jpg", titulo: "Fourth Wing", preco: "87.99", decricao: "Violet Sorrengail, de 20 anos, deveria entrar no Quadrante dos Escribas, vivendo uma vida tranquila entre livros e história. Agora, a comandante geral - também conhecida como sua mãe durona - ordenou que Violet se juntasse às centenas de candidatos que lutam para se tornar a elite de Navarra: os cavaleiros de dragões." },
-  {id: 9, imagem: "lendarios,jpg", titulo: "Lendários", preco: "37.99", decricao: "Um dos livros mais aguardados do ano, Lendários é uma fantasia apaixonante que une magia, mistério e sociedades secretas, trazendo um novo olhar sobre as lendas do rei Arthur." },
-  {id: 10, imagem: "rd,jpg", titulo: "A Rebelde do Deserto", preco: "26.99", decricao: "O destino do deserto está nas mãos de Amani Al’Hiza ― uma garota feita de fogo e pólvora, com o dedo sempre no gatilho. O deserto de Miraji é governado por mortais, mas criaturas míticas rondam as áreas mais selvagens e remotas, e há boatos de que, em algum lugar, os djinnis ainda praticam magia. De toda maneira, para os humanos o deserto é um lugar impiedoso, principalmente se você é pobre, órfão ou mulher. Amani Al’Hiza é as três coisas." },
+  {id: 9, imagem: "lendarios.jpg", titulo: "Lendários", preco: "37.99", decricao: "Um dos livros mais aguardados do ano, Lendários é uma fantasia apaixonante que une magia, mistério e sociedades secretas, trazendo um novo olhar sobre as lendas do rei Arthur." },
+  {id: 10, imagem: "rd.jpg", titulo: "A Rebelde do Deserto", preco: "26.99", decricao: "O destino do deserto está nas mãos de Amani Al’Hiza ― uma garota feita de fogo e pólvora, com o dedo sempre no gatilho. O deserto de Miraji é governado por mortais, mas criaturas míticas rondam as áreas mais selvagens e remotas, e há boatos de que, em algum lugar, os djinnis ainda praticam magia. De toda maneira, para os humanos o deserto é um lugar impiedoso, principalmente se você é pobre, órfão ou mulher. Amani Al’Hiza é as três coisas." },
 
 ]
 
@@ -31,6 +31,7 @@ app.get('/', (req, res) => {
 app.get('/produto', (req, res) => {
   res.render('produtos', { message: 'Deu certo' });
 });
+
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);

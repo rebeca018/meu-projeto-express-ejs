@@ -6,89 +6,21 @@
 </head>
 <body>
 
-  <% for(let produto of produtos){ %>
-    <h1>Rebeca</h1>
-  <% } %>
+  <main>
+    <% for(let produto of produtos) { %>
+    <div class="book-card" >
+      <a href="/produto/<%= produto.id%>">
+        <img src="/imagem/<%= produto.imagem%>" alt="" class="book-card-img">
+        <h4 class="book-card-h4"><%= produto.titulo%></h4>
+        <p class="book-card-p">R$<%= produto.preco%></p>
+        <p class="book-card-p"><%= produto.descricao%></p>
+      </a>
+    </div>
+    <% } %>
+  </main>
 
-  <div class="book-card" >
-    <a href="/produto">
-      <img src="/imagem/soc.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">Six Of Crows</h4>
-      <p class="book-card-p">R$ 109,31</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/estilhaca.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">Estilhaça-me</h4>
-      <p class="book-card-p">R$ 45,43</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/pj.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">Percy Jackson</h4>
-      <p class="book-card-p">R$ 40,99</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/legend.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">Legend</h4>
-      <p class="book-card-p">R$ 42,30</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/jh.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">Jogos de Herança</h4>
-      <p class="book-card-p">R$ 33,99</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/pc.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">O Príncipe Cruel</h4>
-      <p class="book-card-p">R$ 32,99</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/caraval.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">Caraval</h4>
-      <p class="book-card-p">R$ 49,32</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/fw.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">Fourth Wing</h4>
-      <p class="book-card-p">R$ 87,99</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/lendarios.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">Lendários</h4>
-      <p class="book-card-p">R$ 37,99</p>
-    </a>
-  </div>
-
-  <div class="book-card">
-    <a href="/produto">
-      <img src="/imagem/rd.jpg" alt="" class="book-card-img">
-      <h4 class="book-card-h4">A Rebelde do Deserto</h4>
-      <p class="book-card-p">R$ 26,99</p>
-    </a>
-  </div>
-
+  <footer>
+    <p class="cor">&copy; 2023 My Library</p>
+  </footer>
 </body>
 </html>
