@@ -1,6 +1,15 @@
-body, html{
+body, html, main{
     background-color: #344960;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.color{
+    background-color: #C0A293;
+    color: #344960;
+}
+
+.color_b{
+    color: #344960;
 }
 
 .book-card {
