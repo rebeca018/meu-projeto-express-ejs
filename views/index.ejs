@@ -9,7 +9,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary, color">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        Minhas músicas favoritas
+        My book Store
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
@@ -21,11 +21,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active, color_b" aria-current="page" href="#"> Em destaque </a>
+            <a class="nav-link active, color_b" aria-current="page" href="#">Favoritos</a>
           </li>
   
           <li class="nav-item">
-            <a class="nav-link active, color_b" aria-current="page" href="#"> Adiocionar nova música </a>
+            <a class="nav-link active, color_b" aria-current="page" href="#"> Carrinho </a>
           </li>
         </ul>
       </div>
@@ -36,13 +36,10 @@
   <main>
     <% for(let produto of produtos) { %>
     <div class="book-card" >
-      <a href="/produto/<%= produto.id%>">
         <img src="/imagem/<%= produto.imagem%>" alt="" class="book-card-img">
         <h4 class="book-card-h4"><%= produto.titulo%></h4>
         <p class="book-card-p">R$<%= produto.preco%></p>
-        <p class="book-card-p"><%= produto.descricao%></p>
         <a href="/produto/<%= produto.id%>" class="botao">Vizualizar Produto</a>
-      </a>
     </div>
     <% } %>
   </main>

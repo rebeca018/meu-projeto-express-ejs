@@ -18,7 +18,7 @@ body, html, main{
     border: 5px solid #C0A293;
     display:inline-block;
     overflow: hidden;
-    height: 250px;
+    height: 300px;
     width: 250px;
     border-radius: 10px;
   
@@ -80,11 +80,20 @@ body, html, main{
   
 }
 
-.card{
-    display: flex;
+.botao{
+    background-color: #344960;
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    color: #ffffff;
 }
 
-.card-home {
+.card-beca{
+    display: flex;
+    background-color: #344960;
+}
+
+.card-home-beca {
     text-align: left;
     margin: 30px;
     background-color: #C0A293;
@@ -101,14 +110,14 @@ body, html, main{
   
 }
 
-.card-a{
+.card-a-beca{
     margin-top: 90px;
     height: 156px;
     width: 150px;
     
 }
 
-.card-b{
+.card-b-beca{
     height: 340px;
     width: 430px;
     display:table-cell;
@@ -116,7 +125,7 @@ body, html, main{
     
 }
 
-.card-img{
+.card-img-beca{
     height: 154px;
     width: 107px;
     display: block;
@@ -124,7 +133,7 @@ body, html, main{
     margin-right: auto;
 }
 
-.card-p {
+.card-p-beca {
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
     margin: 0;
