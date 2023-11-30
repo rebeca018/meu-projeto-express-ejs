@@ -41,6 +41,7 @@
         <h4 class="book-card-h4"><%= produto.titulo%></h4>
         <p class="book-card-p">R$<%= produto.preco%></p>
         <p class="book-card-p"><%= produto.descricao%></p>
+        <a href="/produto/<%= produto.id%>" class="botao">Vizualizar Produto</a>
       </a>
     </div>
     <% } %>
